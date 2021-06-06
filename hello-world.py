@@ -1,4 +1,4 @@
-# stings
-fruit = "I like apples, mangoes, bananas"
-print(fruit)
-print(fruit.split(' '))
+# lists
+l1 = [1,"a",True]
+print(l1)
+print(type(l1))
