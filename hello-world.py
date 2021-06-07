@@ -114,7 +114,18 @@ print(type(tup1))
 
 tup2 =  (1,"a",True,2,"b",False)
 print(tup2)
-
+# to find the length of the tuple
 print(len(tup2))
-
+# to add or multiply or do both at the same time
 print(tup1 + tup2)
+print()
+print(tup1*3)
+print()
+print(tup1*3+ tup2)
+print()
+# to find out the maximum and minimum values of a tuple
+tup1=(1,2,3,4,5,6)
+print(min(tup1))
+print(max(tup1))
+
+
