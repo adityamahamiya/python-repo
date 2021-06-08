@@ -239,3 +239,14 @@ while i<=10:
     print(n," * ", i, " = ",n*i)
     i=i+1
 print()
+# class
+class Phone:
+    def make_call(self):
+        print("Making phone call")
+    def play_game(self):
+        print("Playing game")
+p1 = Phone()
+p1.make_call()
+print()
+p1.play_game()
+print()
