@@ -180,7 +180,7 @@ print()
 # If statement
 a = 10
 b = 20
-if a > b :
+if a > b:
     print("a is greater than b")
 else:
     print("b is greater than a")
@@ -197,25 +197,25 @@ if (c > a) & (c > b):
     print("c is the greatest")
 print()
 #  tuple with if
-tup1 = (1 ,2 ,3 ,4 ,5)
-if"a" in tup1:
+tup1 = (1, 2, 3, 4, 5)
+if "a" in tup1:
     print("a is present in tup1")
 else:
     print("a is not present in tup1")
 print()
 # if with lists
-l1 = ["a" ,"b" ,"c"]
-if l1[0]=="a":
-    l1[0]="z"
+l1 = ["a", "b", "c"]
+if l1[0] == "a":
+    l1[0] = "z"
 print(l1)
 print()
 # if with dictionary
-d1 ={"k1":10,"k2":20,"k3":30}
-if d1["k1"]==10:
-    d1["k1"]=d1["k1"]+100
+d1 = {"k1": 10, "k2": 20, "k3": 30}
+if d1["k1"] == 10:
+    d1["k1"] = d1["k1"] + 100
 print(d1)
 # looping statements (simple for loop)
-fruits = ["apple","mango","banana"]
+fruits = ["apple", "mango", "banana"]
 for i in fruits:
     print(i)
 print()
@@ -224,29 +224,63 @@ color = ["blue", "black", "green", "yellow"]
 item = ["book", "pencil", "ball", "chair"]
 for i in color:
     for j in item:
-        print(i,j)
+        print(i, j)
 print()
 # Printing 1-10 while using loop
 i = 1
-while i<=10:
+while i <= 10:
     print(i)
-    i=i+1
+    i = i + 1
 print()
 # printing 2-table with while loop
 i = 1
 n = 2
-while i<=10:
-    print(n," * ", i, " = ",n*i)
-    i=i+1
+while i <= 10:
+    print(n, " * ", i, " = ", n * i)
+    i = i + 1
 print()
+
+
 # class
 class Phone:
     def make_call(self):
         print("Making phone call")
+
     def play_game(self):
         print("Playing game")
+
+
 p1 = Phone()
 p1.make_call()
 print()
 p1.play_game()
 print()
+
+
+# adding parameters to the class
+class Phone:
+    def set_color(self, color):
+        self.color = color
+
+    def set_cost(self, cost):
+        self.cost = cost
+
+    def show_color(self):
+        return self.color
+
+    def show_cost(self):
+        return self.cost
+
+    def make_call(self):
+        print("Making phone call")
+
+    def play_game(self):
+        print("Playing game")
+
+
+p1 = Phone
+
+p1.set_color("blue")
+p1.set_cost(999)
+p1.show_color()
+p1.show_cost()
