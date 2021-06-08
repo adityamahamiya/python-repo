@@ -76,7 +76,6 @@ print(l1[2:5])
 print("END")
 print()
 
-
 # lists
 l1 = ["apples", "mangoes", "bananas"]
 print(l1)
@@ -88,13 +87,12 @@ l1.pop()
 print(l1)
 l1.reverse()
 print(l1)
-l1.insert(1,"Sparta")
+l1.insert(1, "Sparta")
 print(l1)
 l1.sort()
 print(l1)
 print("END")
 print()
-
 
 # lists
 l1 = [1, 2, 3]
@@ -102,30 +100,75 @@ l2 = ["a", "b", "c"]
 print(l1 + l2)
 print("END")
 print()
-l1 = [1,"a",True]
-print(l1*3)
+l1 = [1, "a", True]
+print(l1 * 3)
 print("END")
 print()
 
 # Tuple
-tup1 = (1,"Sparta",True)
+tup1 = (1, "Sparta", True)
 print(tup1)
 print(type(tup1))
 
-tup2 =  (1,"a",True,2,"b",False)
+tup2 = (1, "a", True, 2, "b", False)
 print(tup2)
 # to find the length of the tuple
 print(len(tup2))
 # to add or multiply or do both at the same time
 print(tup1 + tup2)
 print()
-print(tup1*3)
+print(tup1 * 3)
 print()
-print(tup1*3+ tup2)
+print(tup1 * 3 + tup2)
 print()
 # to find out the maximum and minimum values of a tuple
-tup1=(1,2,3,4,5,6)
+tup1 = (1, 2, 3, 4, 5, 6)
 print(min(tup1))
 print(max(tup1))
+print("END")
+print()
 
+# Dictionary
+Fruits = {"Mango": 10, "Apple": 20, "Litchi": 30, "Blueberry": 40}
+print(Fruits)
+print(type(Fruits))
 
+# separating keys and values
+print(Fruits.keys())
+print(Fruits.values())
+print()
+
+# adding or changing an existing element
+Fruits["Banana"] = 50
+print(Fruits)
+Fruits["Apple"] = 60
+print(Fruits)
+print()
+
+# adding two dictionaries
+fruit1 = {"Mango": 100, "Apple": 200}
+fruit2 = {"Litchi": 300, "Blueberry": 400}
+fruit1.update(fruit2)
+print(fruit1)
+
+# removing an element from a dictionary
+fruit1.pop("Blueberry")
+print(fruit1)
+print()
+# Set operations
+s1 = {1, "a", True, 2, "b", False}
+print(s1)
+# to add one single element
+s1.add("Hello")
+print(s1)
+# to add multiple elements
+s1.update([10, 20, 30])
+print(s1)
+print()
+# for union of two sets
+t1 = {1, 2, 3}
+t2 = {4, 5, 6}
+print(t1.union(t2))
+j1 = {1, 2, 3, 4, 5}
+j2 = {5, 6, 7, 1, 3}
+print(j1.intersection(j2))
