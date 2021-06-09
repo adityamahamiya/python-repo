@@ -285,18 +285,69 @@ p1.set_cost(999)
 print(p1.show_color())
 print(p1.show_cost())
 print()
+
+
 # class with a constructor
 class Employee:
     def __init__(self, name, age, salary, gender):
         self.name = name
-        self.age =  age
+        self.age = age
         self.salary = salary
         self.gender = gender
+
     def employee_details(self):
-        print("Name of the employee is ",self.name)
-        print("Age of the employee is ",self.age)
-        print( "Salary of the employee is ",self.salary)
-        print("Gender of the employee is ",self.gender)
-# constructer example
-e1 = Employee('Sam',32,85000,'Male')
+        print("Name of the employee is ", self.name)
+        print("Age of the employee is ", self.age)
+        print("Salary of the employee is ", self.salary)
+        print("Gender of the employee is ", self.gender)
+
+
+# constructor example
+e1 = Employee('Sam', 32, 85000, 'Male')
 print(e1.employee_details())
+
+
+# Inheritance (PARENT CLASS)
+class Vehicle:
+    def __init__(self, mileage, cost):
+        self.mileage = mileage
+        self.cost = cost
+
+    def show_details(self):
+        print("I am a Vehicle ")
+        print("Mileage of the Vehicle is ", self.mileage)
+        print("Cost of the Vehicle is ", self.cost)
+
+
+v1 = Vehicle(500, 500)
+print(v1.show_details())
+
+
+# Inheritance (CHILD CLASS
+class Car(Vehicle):
+    def show_car(self):
+        print("I am a car")
+
+
+c1 = Car(200, 1200)
+print(c1.show_details())
+print(c1.show_car())
+# Inheritance (SUPER Class)
+class Car(Vehicle)  :
+    def __init__(self, mileage, cost, tyres, hp):
+        super().__init__(mileage,cost)
+        self.tyres = tyres
+        self.hp = hp
+
+    def show_car_details(self):
+        print("I am a Car ")
+        print("Number of tyres are ", self.tyres)
+        print("Value of horse power is ", self.hp)
+
+
+c1= Car(20, 12000, 4, 300)
+print(c1.show_details())
+print(c1.show_car_details())
+
+
+
