@@ -350,6 +350,7 @@ class Car(Vehicle):
 c1 = Car(20, 12000, 4, 300)
 print(c1.show_details())
 print(c1.show_car_details())
+print()
 
 
 # inheritance (MULTIPLE)
@@ -384,4 +385,37 @@ d1.assign_string_three("Three")
 print(d1.show_string_one())
 print(d1.show_string_two())
 print(d1.show_string_three())
+print()
 
+
+# inheritance (MULTI lvl)
+class Parent():
+    def assign_name(self, name):
+        self.name = name
+
+    def show_name(self):
+        return self.name
+
+
+class Child(Parent):
+    def assign_age(self, age):
+        self.age = age
+
+    def show_age(self):
+        return self.age
+
+
+class GrandChild(Child):
+    def assign_gender(self, gender):
+        self.gender = gender
+
+    def show_gender(self):
+        return self.name
+gc = GrandChild()
+gc.assign_name("Bob")
+gc.assign_age("52")
+gc.assign_gender("Male")
+print(gc.show_name())
+print(gc.show_age())
+print(gc.show_gender())
+print()
