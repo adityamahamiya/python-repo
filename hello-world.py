@@ -411,6 +411,8 @@ class GrandChild(Child):
 
     def show_gender(self):
         return self.name
+
+
 gc = GrandChild()
 gc.assign_name("Bob")
 gc.assign_age("52")
@@ -419,3 +421,18 @@ print(gc.show_name())
 print(gc.show_age())
 print(gc.show_gender())
 print()
+# NumPy (SINGLE DIMENSIONAL ARRAY)
+import numpy as np
+n1 = np.array([10, 20, 30, 40])
+print(n1)
+print()
+print(type(n1))
+print()
+import numpy as np
+n2=np.array([[10, 20, 30, 40], [40, 30, 20, 10]])
+print(n2)
+print()
+
+
+
+
