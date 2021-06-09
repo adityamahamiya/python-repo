@@ -497,4 +497,3 @@ print()
 print(np.setdiff1d(n1, n2))
 print()
 print(np.setdiff1d(n2, n1))
-
