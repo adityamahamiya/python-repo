@@ -166,7 +166,7 @@ s1.update([10, 20, 30])
 print(s1)
 print()
 # to remove elements
-s1.remove("b")
+s1.remove(False)
 print(s1)
 print()
 # for union of two sets
@@ -278,9 +278,25 @@ class Phone:
         print("Playing game")
 
 
-p1 = Phone
+p1 = Phone()
 
 p1.set_color("blue")
 p1.set_cost(999)
-p1.show_color()
-p1.show_cost()
+print(p1.show_color())
+print(p1.show_cost())
+print()
+# class with a constructor
+class Employee:
+    def __init__(self, name, age, salary, gender):
+        self.name = name
+        self.age =  age
+        self.salary = salary
+        self.gender = gender
+    def employee_details(self):
+        print("Name of the employee is ",self.name)
+        print("Age of the employee is ",self.age)
+        print( "Salary of the employee is ",self.salary)
+        print("Gender of the employee is ",self.gender)
+# constructer example
+e1 = Employee('Sam',32,85000,'Male')
+print(e1.employee_details())
