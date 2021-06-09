@@ -348,6 +348,6 @@ class Car(Vehicle)  :
 c1= Car(20, 12000, 4, 300)
 print(c1.show_details())
 print(c1.show_car_details())
-
+# inheritance
 
 
