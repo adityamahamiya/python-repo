@@ -497,3 +497,47 @@ print()
 print(np.setdiff1d(n1, n2))
 print()
 print(np.setdiff1d(n2, n1))
+print()
+# addition in NumPy (BASIC)
+import numpy as np
+
+n1 = np.array([10, 20, 30])
+n1 = n1 + 1
+print(n1)
+print()
+import numpy as np
+
+n1 = np.array([10, 20, 30])
+n1 = n1 - 1
+print(n1)
+print()
+import numpy as np
+
+n1 = np.array([10, 20, 30])
+n1 = n1 * 2
+print(n1)
+print()
+import numpy as np
+
+n1 = np.array([10, 20, 30])
+n1 = n1 / 2
+print(n1)
+print()
+# MEAN
+import numpy as np
+
+n1 = np.array([10, 20, 30, 40, 50, 60])
+print(np.mean(n1))
+print()
+# median
+import numpy as np
+
+n1 = np.array([11, 44, 5, 96, 67, 85])
+print(np.median(n1))
+print()
+# standard deviation
+import numpy as np
+
+n1 = np.array([1, 5, 3, 100, 4, 48])
+print(np.std(n1))
+print()
