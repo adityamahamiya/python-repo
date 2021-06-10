@@ -541,3 +541,16 @@ import numpy as np
 n1 = np.array([1, 5, 3, 100, 4, 48])
 print(np.std(n1))
 print()
+# NumPy Matrix
+import numpy as np
+
+n1 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(n1)
+print()
+print(n1[0])
+print()
+print(n1[1])
+print()
+print(n1[:,1])
+print()
+print(n1[:,2])
