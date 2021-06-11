@@ -239,8 +239,6 @@ while i <= 10:
     print(n, " * ", i, " = ", n * i)
     i = i + 1
 print()
-
-
 # class
 class Phone:
     def make_call(self):
@@ -612,11 +610,27 @@ print(s1[:4])
 print()
 print(s1[-3:])
 print()
-# adding scalar value to  the sceries elements
+# adding scalar value to  the series elements
 print(s1+5)
 print()
-# adding two seriers elements
+# adding two series elements
 s1 = pd.Series([1, 2, 3, 4, 5,6,7,8,9])
 s2 = pd.Series([10,20,30,40,50,60,70,80,90])
 print(s1+s2)
+print()
+# Pandas data frame
+import pandas as pd
+df=pd.DataFrame({"Name":['Bob','Sam','Anne'],"Marks":[76,25,92]})
+print(df)
+print()
+print(type(df))
+# data frame in-build function
+iris=pd.read_csv('Book1.csv')
+print(iris.head())
+print()
+print(iris.tail())
+print()
+print(iris.shape)
+print()
+print(iris.describe())
 print()
