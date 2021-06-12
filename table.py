@@ -5,8 +5,8 @@ print("-------------------------------------------------------------------------
 
 for i in range(1, 11):
     for n in range(1, 11):
-        print("\n")
         print(i * n, end="\t")
+    print("\n")
 n = 1
 while n <= 12:
     print("Table of ",n)
