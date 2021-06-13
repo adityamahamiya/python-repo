@@ -58,3 +58,25 @@ print(iris.describe())
 print()
 # .iloc[]
 print(iris.iloc[0:3, 0:2])
+print()
+# .loc[]
+print(iris.loc[0:20, ("Item", "Units")])
+print()
+# dropping columns
+print(iris.drop("OrderDate", axis=1))
+print()
+# dropping rows
+print(iris.drop([1, 2, 3], axis=0))
+print()
+# more functions with Pandas
+print("MEAN:-")
+print(iris.mean())
+print()
+print("MEDIAN:-")
+print(iris.median())
+print()
+print("MINIMUM:-")
+print(iris.min())
+print()
+print("MAXIMUM:-")
+print(iris.max())
