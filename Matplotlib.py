@@ -89,15 +89,54 @@ plt.subplot(1, 2, 2)
 plt.scatter(x, b, marker=".", c="yellow", s=150)
 plt.show()
 # Histogram
-data=[1,3,3,3,3,3,9,9,5,4,4,8,8,8,6,7]
+data = [1, 3, 3, 3, 3, 3, 9, 9, 5, 4, 4, 8, 8, 8, 6, 7]
 plt.hist(data)
 plt.show()
 # Histogram - 2
-plt.hist(data,color="g",bins=4)
+plt.hist(data, color="g", bins=4)
 plt.show()
 # Histogram -3 dataset
 import pandas as pd
-iris=pd.read_csv('Book1.csv')
+
+iris = pd.read_csv('Book1.csv')
 iris.head()
-plt.hist(iris['Units'],bins=30,color="r")
+plt.hist(iris['Units'], bins=30, color="r")
+plt.show()
+# box plot
+one = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+two = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+three = [6, 7, 8, 9, 8, 7, 6, 5, 4]
+data = list([one, two, three])
+plt.boxplot(data)
+plt.show()
+# Violin plot
+one = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+two = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+three = [6, 7, 8, 9, 8, 7, 6, 5, 4]
+data = list([one, two, three])
+plt.violinplot(data, showmedians=True)
+plt.show()
+# pie chart
+fruit = ['Apple', 'Orange', 'Mango', 'Guava']
+quantity = [67, 34, 100, 29]
+plt.pie(quantity, labels=fruit)
+plt.show()
+# pie chart - 2
+fruit = ['Apple', 'Orange', 'Mango', 'Guava']
+quantity = [53, 43, 12, 97]
+plt.pie(quantity, labels=fruit, autopct='%0.1f%%', colors=['yellow', 'grey', 'blue', 'black'])
+plt.show()
+# doughnut-chart
+fruit = ['Apple', 'Orange', 'Mango', 'Guava']
+quantity = [53, 43, 12, 97]
+plt.pie(quantity, labels=fruit, radius=2)
+plt.pie([1], colors=['w'], radius=1)
+plt.show()
+# seaborn line plot
+import seaborn as sns
+from matplotlib import pyplot as plt
+
+fmri = sns.load_dataset("fmri")
+fmri.head()
+sns.lineplot(x="time_point", y="signal", data=fmri)
 plt.show()
